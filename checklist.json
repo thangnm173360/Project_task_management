@@ -1,0 +1,14 @@
+{
+	"list_checklist": [
+		{
+			"id": 1,
+			"task_name": "new name",
+			"isChecked": "true"
+		},
+		{
+			"id": 2,
+			"task_name": "home work",
+			"isChecked": "false"
+		}
+	]
+}
