@@ -33,7 +33,12 @@ class ListsController extends Controller {
 
     public function updateList(Request $request, $id, $list_id) {
         $list = Lists::find($list_id);
-        $list->title = $request->title;
+        if (isset($request->index)){
+            $list->index = $request->index;
+        }
+        if (isset($request->title)){
+            $list->title = $request->title;
+        }
         $result = $list->save();
         if ($result) {
             return response()->json(['status' => 'success', 'message' => 'list updated successfully']);
