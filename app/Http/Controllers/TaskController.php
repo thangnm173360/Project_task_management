@@ -31,6 +31,9 @@ class TaskController extends Controller {
 
     public function updateCard(Request $request, $id, $list_id, $task_id) {
         $card = Task::find($task_id);
+        if (isset($request->lists_id)){
+            $card->lists_id = $request->lists_id;
+        }
         if (isset($request->title)){
             $card->title = $request->title;
         }
