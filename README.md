@@ -28,9 +28,10 @@
         DB_USERNAME=root
         DB_PASSWORD=
         
-    Step 6: $ php artisan key:generate
+    Step 6: create DB with name is laravel_task_management
+    Step 7: $ php artisan key:generate
     if you false when generate: 
     please visit link https://stackoverflow.com/questions/61177995/laravel-packagemanifest-php-undefined-index-name
-    Step 7: $ php artisan migrate
+    Step 8: $ php artisan migrate
     
-    Step 8: $ php artisan serve
+    Step 9: $ php artisan serve
