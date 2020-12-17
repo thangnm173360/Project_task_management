@@ -21,6 +21,10 @@ Route::get('/', 'HomeController@index')->name('dashboard');
 Auth::routes();
 Route::get('/board/{id}', 'GeneralController@main');
 Route::get('/home', 'GeneralController@home');
+
+Route::get('/profile', 'UserController@profile');
+Route::post('/profile', 'UserController@update_avatar');
+
 Route::group(['prefix' => 'boards'], function() {
   Route::get('/', 'BoardController@index');
   Route::post('/','BoardController@saveBoard');
