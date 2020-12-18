@@ -10,6 +10,7 @@
 	<link href="{{ asset('assets/css/general.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/home.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/fontawesome/css/all.css') }}" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -34,6 +35,10 @@
 					<div class="btn">
 						<i class="fab fa-trello"></i>
 						<span>Boards</span>
+					</div>
+					<div class="btn">
+						<i class="glyphicon glyphicon-user"></i>
+						<a href="/profile">Profile</a>
 					</div>
 					<div class="btn">
 						<i class="fas fa-door-open"></i>
