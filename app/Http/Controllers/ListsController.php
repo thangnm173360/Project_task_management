@@ -15,7 +15,6 @@ class ListsController extends Controller {
             $list_id = $list[$i]->id;
             $list[$i]->card = DB::select( DB::raw("SELECT id, title, dead_line, status FROM tasks WHERE lists_id = '$list_id'") );
         }
-//        $list[2]->cards = DB::select( DB::raw("SELECT * FROM tasks WHERE lists_id = '24'") );
 
         return response()->json($list);
     }
@@ -38,6 +37,9 @@ class ListsController extends Controller {
         }
         if (isset($request->title)){
             $list->title = $request->title;
+        }
+        if (isset($request->id)){
+            $list->id=1000;
         }
         $result = $list->save();
         if ($result) {
