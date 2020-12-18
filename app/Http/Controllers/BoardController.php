@@ -23,12 +23,10 @@ class BoardController extends Controller {
 
     public function findOne($id) {
         $board = DB::select( DB::raw("SELECT id, title FROM boards WHERE id = '$id'") );
-//        $board = Board::find($id);
         return response()->json($board);
     }
 
     public function updateBoard(Request $request, $id) {
-        //$board = DB::select( DB::raw("SELECT * FROM boards WHERE id = '$id'") );
         $board = Board::find($id);
         $board->title = $request->title;
         $result = $board->save();
