@@ -10,7 +10,7 @@ use App\Board;
 
 class ListsController extends Controller {
     public function index($board_id) {
-        $list = DB::select( DB::raw("SELECT id, title, board_id FROM lists WHERE board_id = '$board_id'") );
+        $list = DB::select( DB::raw("SELECT id, title, board_id, index FROM lists WHERE board_id = '$board_id'") );
         for($i=0; $i<count($list); $i++){
             $list_id = $list[$i]->id;
             $list[$i]->card = DB::select( DB::raw("SELECT id, title, dead_line, status FROM tasks WHERE lists_id = '$list_id'") );
