@@ -26,8 +26,7 @@ class UserController extends Controller {
         $request->avatar->move("uploads", $avatarName);
         $user->avatar = $avatarName;
         $user->save();
-        return back()
-            ->with('success','You have successfully upload image.');
+        return back();
     }
 
 }

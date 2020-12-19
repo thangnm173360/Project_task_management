@@ -10,7 +10,7 @@
 	<link href="{{ asset('assets/css/general.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/home.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/fontawesome/css/all.css') }}" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -24,11 +24,9 @@
 		<div class="main-content">
 			<div class="sidebar">
 				<div class="user-section">
-					<div id="avatar" class="avatar">
-						<span>{{ str_split(Auth::user()->name)[0] }}</span>
-						<div id="camera" class="camera">
-							<i class="fas fa-camera"></i>
-						</div>
+					<div class="card-block text-center text-white">
+						<img src="uploads/{{ Auth::user()->avatar }}" class="img-radius" alt="Choose a picture">
+						<h3 class ="text-align: center">{{ Auth::user()->name }}</h3>
 					</div>
 					<div style="width: 80%;height: 2px; background-color: dimgray;margin: 20px 0;">
 					</div>
@@ -37,7 +35,7 @@
 						<span>Boards</span>
 					</div>
 					<div class="btn">
-						<i class="glyphicon glyphicon-user"></i>
+						<i class="fas fa-user-edit"></i>
 						<a href="/profile">Profile</a>
 					</div>
 					<div class="btn">
@@ -115,6 +113,17 @@
 	<script type="text/javascript">
 		handleAPI("/boards/", {}, "GET", "board");
 		createColorPalatte();
+	</script>
+	<script type= text/javascript>
+		$(document).ready(function() {
+			$('#upload-photo').change(function() {
+				if ($(this) != null) {
+					$('#change-profile').removeAttr('disabled');
+				} else {
+					$('#change-profile').attr('disabled', '');
+				}
+			});
+		});
 	</script>
 </body>
 

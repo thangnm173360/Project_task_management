@@ -242,6 +242,14 @@
     flex-direction: column;
 }
 
+.img-radius {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: #b0e574 solid 5px;
+    margin-left: 10px;
+}
+
 .avatar {
     height: 150px;
     width: 150px;
