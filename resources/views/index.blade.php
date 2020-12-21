@@ -41,6 +41,87 @@
 			</div>
 		</div>
 	</div>
+	<div class="our-team">
+		<header>
+			<h2>NHÓM 12</h2>
+		</header>
+		<main>
+			<ul>
+				<li>
+					<div class="our-team-img">
+						<img src="\assets\img\thang.jpg" alt="" >
+					</div>
+					<div class="our-team-text">
+						<h3>NGUYEN MINH THANG</h3>
+						<div class="info">
+							<p> MSSV:20173306</p>
+							<P>LEADER</P>
+						</div>
+						<div class="social">
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="far fa-envelope"></i>
+						</div>
+					</div>
+				</li>
+				<li>
+				<div class="our-team-img">
+					<img src="\assets\img\avatar.jpg" alt="">
+				</div>
+				<div class="our-team-text">
+					<h3>DUONG XUAN HOAN</h3>
+					<div class="info">
+						<P>MSSV:20173125 </P>
+						<p>MEMBER</p>
+					</div>
+					<div class="social">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="far fa-envelope"></i>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="our-team-img">
+					<img src="\assets\img\avatar.jpg" alt="">
+				</div>
+				<div class="our-team-text">
+					<h3>VUONG VAN AN</h3>
+					<div class="info">
+						<p>MSSV:20172932 </p>
+						<p>MEMBER</p>
+					<div class="social">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="far fa-envelope"></i>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="our-team-img">
+					<img src="\assets\img\avatar.jpg" alt="">
+				</div>
+				<div class="our-team-text">
+					<h3>NGUYEN DUC MANH HOANG</h3>
+					<div class="info">
+						<P>MSSV:20173139</P>
+						<p>MEMBER</p>
+					</div>
+					<div class="social">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="far fa-envelope"></i>
+					</div>
+				</div>
+			</li>
+			</ul>
+			
+		</main>
+	</div>
 </body>
 
 </html>
